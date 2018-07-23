@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import './LogInForm.css'
+import nicknames from './datas/nickname.json'
 
 export default class LogInForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      username: ''
+      nickname: '',
+      warnNeeded: false,
+      warningMsg: '',
+      btnDisabled: true
     }
   }
   render() {
@@ -17,23 +21,30 @@ export default class LogInForm extends Component {
           </svg>
           <p>CA Chat</p>
         </header>
-        <div id="nicknameWrapper">
-          <div id="warning" className="warning"></div>
-          <form id='loginForm' onSubmit={this.logIn.bind(this)} >
-            <input type="text" id="nicknameInput" className="nicknameInput" value={this.state.username} onChange={this.usernameChanging.bind(this)} maxLength="20" placeholder="Nickname please" />
-            <input type="submit" value="Enter" id="loginBtn" className="loginBtn" />
+        <div className="nicknameWrapper">
+          {this.state.warnNeeded ? <p className="warning">{this.state.warningMsg}</p> : null}
+          <form className='loginForm' onSubmit={this.logIn.bind(this)} >
+            <input type="text" className="nicknameInput" value={this.state.nickname} onChange={this.changeState.bind(this)} maxLength="20" placeholder="Nickname please" />
+            <input type="submit" value="Enter" className="loginBtn" disabled={this.state.btnDisabled} />
           </form>
-          <a href="javascript:;" id="giveName">Give me a name</a>
+          <a href="javascript:;" onClick={this.giveName.bind(this)}>Give me a name</a>
         </div>
       </div>
     )
   }
   logIn(e) {
     e.preventDefault()
+    this.props.onSubmit(this.state.nickname)
   }
-  usernameChanging(e) {
-    let state_copy = JSON.parse(JSON.stringify(this.state))
-    state_copy.username = e.target.value
-    this.setState(state_copy)
+  changeState(e) {
+    if (e.target.value.trim() === '') {
+      this.setState({ nickname: e.target.value, warnNeeded: true, warningMsg: 'Nickname is Blank!', btnDisabled: true })
+    } else {
+      this.setState({ nickname: e.target.value, warnNeeded: false, warningMsg: '', btnDisabled: false })
+    }
+  }
+  giveName() {
+    let index = Math.ceil(Math.random() * 105)
+    this.setState({ nickname: nicknames[index] })
   }
 }

@@ -24,25 +24,25 @@
   margin: 10px auto;
 }
 
-.loginWrapper #nicknameWrapper {
+.loginWrapper .nicknameWrapper {
   position: relative;
 }
-#nicknameWrapper .warning {
+.nicknameWrapper .warning {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  margin: -2px;
   color: red;
   text-align: center;
   font-size: 12px;
-  visibility: hidden;
   transition: all 0.3s;
 }
-#nicknameWrapper a#giveName{
+.nicknameWrapper a {
   font-size: 12px;
 }
 
-#loginForm .nicknameInput, #loginForm .loginBtn{
+.loginForm .nicknameInput, .loginForm .loginBtn {
   display: block;
   margin: 16px 0;
   padding: 8px;
@@ -51,19 +51,23 @@
   height: 42px;
   transition: all 0.2s;
 }
-#loginForm .nicknameInput{
+.loginForm .nicknameInput{
   border: 1px solid #999;
   text-align: center;
 }
-#loginForm .nicknameInput:focus{
+.loginForm .nicknameInput:focus{
   box-shadow: 0 2px 10px #ccc;
 }
-#loginForm .loginBtn{
+.loginForm .loginBtn{
   cursor: pointer;
   background-color: #ff6e40;
   font-size: 16px;
 }
-#loginForm .loginBtn:hover{
+.loginForm .loginBtn:hover{
   background-color: #ff8a65;
   box-shadow: 0 2px 10px #ccc;
+}
+.loginForm .loginBtn:disabled{
+  background-color: #fcaa90;
+  cursor: not-allowed;
 }

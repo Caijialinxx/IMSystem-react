@@ -8,14 +8,24 @@ document.head.appendChild(iconfont_ca)
 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      username: '',
+      isLoggedIn: false,
+    }
+  }
   render() {
     return (
       <div className='APP'>
         <div className='background'></div>
-        <LoginForm />
+        {this.state.isLoggedIn ? null : <LoginForm onSubmit={this.logIn.bind(this)} />}
         <footer>created by <a href=''>Caijialinxx</a> | <a href=''>React</a></footer>
       </div>
     )
+  }
+  logIn(username) {
+    this.setState({ username: username, isLoggedIn: true })
   }
 }
 
