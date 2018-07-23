@@ -1,0 +1,16 @@
+.main {
+  width: 900px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 700px;
+  display: flex;
+}
+.main > .userWrapper {
+  width: 28%;
+  background-color: #2e3238;
+  color: white;
+}
+.main > .chatWrapper {
+  width: 72%;
+  background-color: #eee;
+}

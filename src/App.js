@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import LoginForm from './LogInForm'
+import ChatRoom from './ChatRoom'
 
 let iconfont_ca = document.createElement('script')
 iconfont_ca.src = '//at.alicdn.com/t/font_604218_kbl2bsjt2rxav2t9.js'
@@ -19,7 +20,7 @@ class App extends Component {
     return (
       <div className='APP'>
         <div className='background'></div>
-        {this.state.isLoggedIn ? null : <LoginForm onSubmit={this.logIn.bind(this)} />}
+        {this.state.isLoggedIn ? <ChatRoom /> : <LoginForm onSubmit={this.logIn.bind(this)} />}
         <footer>created by <a href=''>Caijialinxx</a> | <a href=''>React</a></footer>
       </div>
     )
