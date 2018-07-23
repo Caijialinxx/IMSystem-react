@@ -20,7 +20,8 @@
 }
 .loginWrapper header svg {
   width: 100%;
-  fill: #ff6e40;
+  height: 100%;
+  fill: #404956;
   margin: 10px auto;
 }
 
@@ -60,14 +61,15 @@
 }
 .loginForm .loginBtn{
   cursor: pointer;
-  background-color: #ff6e40;
+  background-color: #404956;
+  color: white;
   font-size: 16px;
 }
 .loginForm .loginBtn:hover{
-  background-color: #ff8a65;
+  background-color: #48566b;
   box-shadow: 0 2px 10px #ccc;
 }
 .loginForm .loginBtn:disabled{
-  background-color: #fcaa90;
+  background-color: #6b7078;
   cursor: not-allowed;
 }

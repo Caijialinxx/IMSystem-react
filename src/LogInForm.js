@@ -16,7 +16,7 @@ export default class LogInForm extends Component {
     return (
       <div className='loginWrapper'>
         <header>
-          <svg class="icon" aria-hidden="true">
+          <svg className="icon" aria-hidden="true">
             <use xlinkHref="#icon-logo"></use>
           </svg>
           <p>CA Chat</p>
