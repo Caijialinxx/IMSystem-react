@@ -11,8 +11,8 @@ export default class ChatRoom extends Component {
   render() {
     return (
       <main className="main">
-        <UserWrapper />
-        <ChatWrapper />
+        <UserWrapper className='userWrapper' />
+        <ChatWrapper className='chatWrapper' />
       </main>
     )
   }

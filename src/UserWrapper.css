@@ -1,0 +1,12 @@
+.userWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.userWrapper * {
+  color: white;
+}
+.userWrapper h1.userName {
+  padding: 10px;
+  user-select: none;
+}

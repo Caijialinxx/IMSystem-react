@@ -1,0 +1,19 @@
+ul.usersList {
+  margin-right: -17px;
+  position: relative;
+  border-top: 1px solid #404956;
+  overflow: auto;
+}
+li {
+  padding: 10px;
+  height: 65px;
+  border-bottom: 1px solid #404956;
+}
+li.active {
+  background-color: #4f5b6d;
+  font-weight: bold;
+  font-size: 18px;
+}
+li.unread {
+  background-color: #ff6e4099;
+}

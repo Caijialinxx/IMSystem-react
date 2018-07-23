@@ -1,0 +1,102 @@
+.groupWrapper {
+  position: relative;
+}
+/* BEGIN group */
+.joinGroup {
+  background-color: #ffffff22;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px 6px;
+  display: flex;
+  align-items: center;
+}
+.joinGroup > .action {
+  width: 100%;
+  display: flex;
+}
+.action > #create, .action #join {
+  width: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.action > #join {
+  border-left: 1px solid #ddd;
+}
+.action > #create:hover, .action > #join:hover {
+  color: #ff6e40;
+}
+
+.pwdBox {
+  z-index: 1;
+  position: absolute;
+  float: left;
+  /* top: -999px; */
+  left: 240px;
+  padding: 10px;
+  width: 220px;
+  /* opacity: 0; */
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #8c96a5;
+  box-shadow: -1px 1px 2px rgba(0,0,0,0.3);
+}
+.pwdBox::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -8px;
+  border: 8px solid #8c96a5;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  box-shadow: -1px 2px 1px rgba(0,0,0,0.3);
+}
+.pwdBox > #cancelBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 6px;
+}
+.pwdBox > .intro {
+  margin: 0 auto;
+  width: 90%;
+  color: #555;
+}
+.pwdBox > #pwd {
+  margin: 6px;
+  padding: 4px;
+  color: #000;
+}
+.pwdBox > #pwd > input {
+  font-size: 20px;
+  font-weight: bold;
+  width: 26px;
+  border-radius: 2px;
+  background-color: transparent;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.pwdBox > .info {
+  display: none;
+  margin: 6px;
+}
+.pwdBox > .info > input#duration {
+  padding: 0 2px;
+  width: 22px;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #ffffffe0;
+}
+.pwdBox > button {
+  cursor: pointer;
+  width: 90%;
+  margin-top: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #404956;
+}
+/* END group */
