@@ -8,7 +8,7 @@ export default class UserWrapper extends Component {
   render() {
     return (
       <div className={this.props.className}>
-        <h1 className="userName">{this.props.username || '_'}</h1>
+        <h1 className="userName">{this.props.userName || '_'}</h1>
         <SerachFriend />
         <JoinGroup />
         <UsersList />
