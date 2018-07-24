@@ -1,0 +1,17 @@
+/* emoji、字体颜色、发送文件 */
+.toolsWrapper > label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+/* 三者下的 svg icon 样式 */
+.toolsWrapper > label svg {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+/* 字体颜色、发送文件的 input 不可见 */
+.toolsWrapper > label input {
+  display: none;
+}

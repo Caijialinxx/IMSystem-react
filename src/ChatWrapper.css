@@ -1,0 +1,27 @@
+.chatWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chatWrapper header {
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 22px;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* BEGIN messageBox */
+.messageBox {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+/* END messageBox */
+
+/* BEGIN controllers */
+.controllers{
+  height: 30%;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}

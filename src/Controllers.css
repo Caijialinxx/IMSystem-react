@@ -1,0 +1,33 @@
+/* toolsWrapper editWrapper sendWrapper */
+.controllers > div {
+  padding: 6px 10px;
+  flex-shrink: 0;         /* 当编辑区域高度溢出时，另外两个部分默认不缩小比例 */
+}
+
+.controllers > div.editWrapper {
+  flex-shrink: 1;         /* 编辑区域高度溢出时，“缩小”此区域 */
+  padding: 0 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+div.editWrapper > pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.controllers > div.sendWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.sendWrapper span {
+  color: #555;
+  font-size: 13px;
+}
+div.sendWrapper .sendBtn {
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
