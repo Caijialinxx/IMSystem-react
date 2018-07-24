@@ -1,0 +1,35 @@
+.emojisBox {
+  display: none;
+  position: relative;
+  float: left;
+  top: -200px;
+  left: -10px;
+  width: 296px;
+  height: 166px;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #fff3e0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+.emojisBox::after {
+  content: '';
+  position: absolute;
+  top: 158px;
+  left: 16px;
+  transform: rotate(-45deg);
+  border: 6px solid #fff3e0;
+  border-radius: 2px;
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.emojisBox > svg {
+  cursor: pointer;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  transition: all 0.2s;
+  box-sizing: content-box;
+}
+.emojisBox > svg:hover {
+  transform: scale(1.5);
+}
