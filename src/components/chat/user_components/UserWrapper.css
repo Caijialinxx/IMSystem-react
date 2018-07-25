@@ -10,3 +10,52 @@
   padding: 10px;
   user-select: none;
 }
+/* BEGIN searchBox */
+.userWrapper > .searchBox {
+  background-color: #ffffff22;
+  border-radius: 3px;
+  padding: 10px 6px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.searchBox.active {
+  background-color: #ffffff99;
+}
+.searchBox svg {
+  cursor: pointer;
+}
+.searchBox input {
+  width: 100%;
+  background-color: transparent;
+  padding-left: 6px;
+}
+/* END searchBox */
+
+/* BEGIN group */
+.userWrapper > .joinGroup {
+  background-color: #ffffff22;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px 6px;
+  display: flex;
+  align-items: center;
+}
+.joinGroup > .action {
+  width: 100%;
+  display: flex;
+}
+.action > #create, .action #join {
+  width: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.action > #join {
+  border-left: 1px solid #ddd;
+}
+.action > #create:hover, .action > #join:hover {
+  color: #ff6e40;
+}
+/* END group */
+

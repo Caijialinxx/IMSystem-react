@@ -1,34 +1,12 @@
-.serachWrapper {
-  position: relative;
+.alert, .alert * {
+  color: white;
 }
-/* BEGIN searchBox */
-.searchBox {
-  background-color: #ffffff22;
-  border-radius: 3px;
-  padding: 10px 6px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-.searchBox.active {
-  background-color: #ffffff99;
-}
-.searchBox svg {
-  cursor: pointer;
-}
-.searchBox input {
-  width: 100%;
-  background-color: transparent;
-  padding-left: 6px;
-}
-/* END searchBox */
-/* BEGIN alert */
 .alert {
   z-index: 1;
   position: absolute;
   float: left;
   top: -999px;
-  left: 240px;
+  left: 250px;
   opacity: 0;
   padding: 10px;
   width: 220px;
@@ -51,12 +29,12 @@
 .alert #closeBtn{
   cursor: pointer;
   position: absolute;
-  top: 12px;
-  right: 6px;
-  padding: 6px;
+  top: 8px;
+  right: 8px;
   width: 1em;
   height: 1em;
   font-size: 12px;
+  line-height: 1em;
 }
 .alert .info > .friendName {
   word-break: break-all;
@@ -68,7 +46,7 @@
 .alert .info > .status {
   font-size: 12px;
   font-weight: normal;
-  color: #444;
+  color: #ccc;
 }
 .alert .action {
   background-color: rgba(255, 255, 255, 0.2);
@@ -89,4 +67,3 @@
   padding-left: 4px;
   box-sizing: border-box;
 }
-/* END alert */
