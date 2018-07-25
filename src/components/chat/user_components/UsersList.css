@@ -1,9 +1,3 @@
-ul.usersList {
-  margin-right: -17px;
-  position: relative;
-  border-top: 1px solid #404956;
-  overflow: auto;
-}
 li {
   padding: 10px;
   height: 65px;
@@ -15,5 +9,5 @@ li.active {
   font-size: 18px;
 }
 li.unread {
-  background-color: #ff6e4099;
+  background-color: #ff6e40aa;
 }
