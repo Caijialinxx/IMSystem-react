@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './ChatRoom.css'
-import UserWrapper from './UserWrapper'
-import ChatWrapper from './ChatWrapper';
+import UserWrapper from './user_components/UserWrapper'
+import ChatWrapper from './chat_components/ChatWrapper';
 
 export default class ChatRoom extends Component {
   render() {

@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import './JoinGroup.css'
 
 export default class UserWrapper extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <div className="groupWrapper">

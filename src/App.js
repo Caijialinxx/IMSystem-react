@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import LoginForm from './LogInForm'
-import ChatRoom from './ChatRoom'
+import LoginForm from './components/login/LogInForm'
+import ChatRoom from './components/chat/ChatRoom'
 
 
 let iconfont_ca = document.createElement('script')

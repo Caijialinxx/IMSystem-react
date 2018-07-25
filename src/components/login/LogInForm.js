@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './LogInForm.css'
-import nicknames from './datas/nickname.json'
+import nicknames from '../../datas/nickname.json'
 
 export default class LogInForm extends Component {
   constructor(props) {
