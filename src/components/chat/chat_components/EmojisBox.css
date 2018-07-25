@@ -2,10 +2,9 @@
   display: none;
   position: relative;
   float: left;
-  top: -200px;
+  top: -206px;
   left: -10px;
-  width: 296px;
-  height: 166px;
+  width: 304px;
   border-radius: 6px;
   padding: 12px;
   background-color: #fff3e0;
@@ -15,7 +14,7 @@
 .emojisBox::after {
   content: '';
   position: absolute;
-  top: 158px;
+  top: 163px;
   left: 16px;
   transform: rotate(-45deg);
   border: 6px solid #fff3e0;

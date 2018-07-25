@@ -13,7 +13,7 @@
 
 /* BEGIN messageBox */
 .messageBox {
-  flex-grow: 1;
+  height: 70%;
   overflow-y: auto;
 }
 /* END messageBox */
