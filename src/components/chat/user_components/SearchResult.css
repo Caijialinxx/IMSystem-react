@@ -48,18 +48,21 @@
   font-weight: normal;
   color: #ccc;
 }
-.alert .action {
+.alert form.action {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   margin: 6px 0 4px 0;
   padding: 6px;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.alert .action > input {
+.alert form.action > input[type='text'] {
   width: 75%;
   background-color: transparent;
 }
-.alert .action > button {
+.alert form.action > input[type='submit'] {
   cursor: pointer;
   width: 25%;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
