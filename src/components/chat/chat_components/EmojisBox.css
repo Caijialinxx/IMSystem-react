@@ -2,7 +2,7 @@
   display: none;
   position: relative;
   float: left;
-  top: -206px;
+  top: -212px;
   left: -10px;
   width: 304px;
   border-radius: 6px;
@@ -14,7 +14,7 @@
 .emojisBox::after {
   content: '';
   position: absolute;
-  top: 163px;
+  top: 170px;
   left: 16px;
   transform: rotate(-45deg);
   border: 6px solid #fff3e0;

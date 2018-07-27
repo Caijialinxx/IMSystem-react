@@ -45,6 +45,6 @@ export default class LogInForm extends Component {
   }
   giveName() {
     let index = Math.ceil(Math.random() * 105)
-    this.setState({ nickname: nicknames[index] })
+    this.setState({ nickname: nicknames[index], warnNeeded: false, warningMsg: '', btnDisabled: false })
   }
 }

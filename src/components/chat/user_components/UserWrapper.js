@@ -25,7 +25,7 @@ export default class UserWrapper extends Component {
         </div>
         {this.state.isSerachingFriend ? <SearchResult /> : null}
 
-        <div id="joinGroup" className="joinGroup clearfix">
+        <div id="joinGroup" className="joinGroup">
           <svg className="icon" aria-hidden="true">
             <use xlinkHref="#icon-group"></use>
           </svg>
