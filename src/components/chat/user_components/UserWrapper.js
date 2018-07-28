@@ -35,7 +35,7 @@ export default class UserWrapper extends Component {
         </div>
         {this.state.isJoiningGroup ? <GroupPassword /> : null}
 
-        <UsersList />
+        <UsersList className='usersList' />
       </div>
     )
   }
