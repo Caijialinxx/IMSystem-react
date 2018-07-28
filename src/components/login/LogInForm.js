@@ -34,7 +34,11 @@ export default class LogInForm extends Component {
   }
   logIn(e) {
     e.preventDefault()
-    this.props.onSubmit(this.state.nickname)
+    if (this.state.nickname.trim().length !== this.state.nickname.length) {
+      this.setState({ nickname: this.state.nickname.trim() })
+      alert('提示：已为您去除了昵称首尾的所有空格！')
+    }
+    this.props.onSubmit(this.state.nickname.trim())
   }
   changeState(e) {
     if (e.target.value.trim() === '') {
